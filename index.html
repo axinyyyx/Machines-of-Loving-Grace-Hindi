@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI को आसान हिन्दी में समझें: Machines of Loving Grace के विचारों का AI-assisted, स्वतंत्र शैक्षिक सार। प्रस्तुतकर्ता: @rishabhsahil.">
+  <meta name="author" content="@rishabhsahil">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#171716">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hi_IN">
+  <meta property="og:title" content="AI को आसान हिन्दी में समझें | @rishabhsahil">
+  <meta property="og:description" content="Machines of Loving Grace के विचारों का सरल, AI-assisted हिन्दी explanation—उदाहरणों और जरूरी सावधानियों के साथ।">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI को आसान भाषा में समझें — @rishabhsahil">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI को आसान हिन्दी में समझें | @rishabhsahil">
+  <meta name="twitter:description" content="Machines of Loving Grace के विचारों का सरल, AI-assisted हिन्दी explanation।">
+  <meta name="twitter:image" content="og-image.png">
+  <title>AI को आसान हिन्दी में समझें | @rishabhsahil</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "AI को आसान हिन्दी में समझें",
+    "description": "Machines of Loving Grace के विचारों का सरल, AI-assisted हिन्दी शैक्षिक सार।",
+    "inLanguage": "hi-IN",
+    "author": {
+      "@type": "Person",
+      "name": "@rishabhsahil",
+      "sameAs": "https://www.instagram.com/rishabhsahill/"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Artificial intelligence"
+    },
+    "isBasedOn": {
+      "@type": "CreativeWork",
+      "name": "Machines of Loving Grace",
+      "author": {
+        "@type": "Person",
+        "name": "Dario Amodei"
+      },
+      "url": "https://darioamodei.com/essay/machines-of-loving-grace"
+    }
+  }
+  </script>
+  <style>
+    :root { --bg:#f4f0e8; --ink:#171716; --muted:#6e6b65; --line:#c9c4ba; --paper:#fbf9f4; --accent:#2457d6; --selection:#c8d7ff; }
+    :root.dark { --bg:#171716; --ink:#f3efe7; --muted:#b8b3aa; --line:#56534e; --paper:#20201e; --accent:#9bb6ff; --selection:#405687; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:Georgia, "Noto Serif Devanagari", "Nirmala UI", serif; font-size:18px; line-height:1.58; transition:background .25s,color .25s; }
+    ::selection { background:var(--selection); }
+    a { color:inherit; text-underline-offset:3px; text-decoration-thickness:1px; }
+    .wrap { width:min(100% - 40px, 790px); margin:auto; }
+    header { position:sticky; top:0; z-index:5; background:color-mix(in srgb,var(--bg) 92%,transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    .nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { font-size:17px; text-decoration:none; letter-spacing:-.02em; }
+    .brand small { color:var(--muted); display:block; font-family:Arial,sans-serif; font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
+    .nav-right { display:flex; align-items:center; gap:18px; font-family:Arial,sans-serif; font-size:13px; }
+    .source { color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line); }
+    .theme { appearance:none; border:1px solid var(--ink); background:transparent; color:var(--ink); width:43px; height:25px; border-radius:999px; padding:2px; cursor:pointer; }
+    .theme span { display:block; width:17px; height:17px; border-radius:50%; background:var(--ink); transition:transform .2s; }
+    .dark .theme span { transform:translateX(17px); }
+    main { padding:72px 0 30px; }
+    .eyebrow { font-family:Arial,sans-serif; color:var(--muted); font-size:12px; letter-spacing:.11em; text-transform:uppercase; margin:0 0 20px; }
+    h1,h2,h3 { font-weight:400; letter-spacing:-.045em; line-height:1.06; text-wrap:balance; }
+    h1 { max-width:720px; font-size:clamp(47px,9vw,85px); margin:0; }
+    h1 em { font-style:italic; }
+    .lead { max-width:650px; font-size:clamp(21px,3vw,28px); line-height:1.35; letter-spacing:-.025em; margin:35px 0 0; }
+    .credit { margin-top:30px; color:var(--muted); font-size:15px; }
+    .credit strong { color:var(--ink); font-weight:400; }
+    .jump { display:inline-flex; margin-top:38px; font-family:Arial,sans-serif; font-size:14px; text-decoration:none; align-items:center; gap:10px; }
+    .jump::after { content:"↓"; font-size:20px; }
+    section { padding:68px 0; border-bottom:1px solid var(--line); }
+    .section-label { font-family:Arial,sans-serif; font-size:12px; color:var(--muted); letter-spacing:.1em; text-transform:uppercase; margin:0 0 13px; }
+    h2 { font-size:clamp(33px,5vw,52px); margin:0 0 25px; }
+    h3 { font-size:26px; margin:0 0 12px; }
+    p { margin:0 0 18px; }
+    .note { border-left:2px solid var(--ink); padding:3px 0 3px 20px; margin:30px 0 2px; font-size:20px; line-height:1.48; }
+    .contents { list-style:none; padding:0; margin:25px 0 0; border-top:1px solid var(--line); }
+    .contents a { display:flex; justify-content:space-between; gap:20px; padding:13px 0; border-bottom:1px solid var(--line); text-decoration:none; }
+    .contents a:hover { color:var(--accent); }
+    .contents span { color:var(--muted); font-family:Arial,sans-serif; font-size:13px; padding-top:6px; }
+    .terms { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); margin-top:28px; }
+    .term { padding:18px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .term b { display:block; font-family:Arial,sans-serif; font-size:13px; margin-bottom:4px; }
+    .term span { color:var(--muted); font-size:15px; line-height:1.35; }
+    .chapters { list-style:none; margin:0; padding:0; }
+    .chapter { display:grid; grid-template-columns:42px 1fr; gap:18px; padding:30px 0; border-top:1px solid var(--line); }
+    .chapter:last-child { border-bottom:1px solid var(--line); }
+    .number { font-family:Arial,sans-serif; font-size:13px; color:var(--muted); padding-top:7px; }
+    .chapter p { max-width:620px; color:var(--muted); }
+    .example { margin:22px 0 4px; padding:20px 22px; background:var(--paper); border:1px solid var(--line); font-size:16px; }
+    .example b { font-family:Arial,sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.09em; display:block; margin-bottom:7px; }
+    .timeline { margin:35px 0 0; }
+    .time { display:grid; grid-template-columns:130px 1fr; gap:18px; padding:21px 0; border-top:1px solid var(--line); }
+    .time:last-child { border-bottom:1px solid var(--line); }
+    .when { font-family:Arial,sans-serif; font-size:13px; color:var(--muted); padding-top:4px; }
+    .faq { border-top:1px solid var(--line); }
+    details { border-bottom:1px solid var(--line); padding:0; }
+    summary { cursor:pointer; list-style:none; padding:20px 36px 20px 0; position:relative; font-size:20px; }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:"+"; font-family:Arial,sans-serif; position:absolute; right:4px; color:var(--muted); }
+    details[open] summary::after { content:"−"; }
+    details p { color:var(--muted); padding:0 20px 20px 0; }
+    .disclosure { background:var(--paper); border:1px solid var(--line); padding:25px; font-size:15px; color:var(--muted); }
+    footer { padding:35px 0 55px; color:var(--muted); font-family:Arial,sans-serif; font-size:13px; }
+    footer a { color:var(--ink); }
+    @media (max-width:560px) { body{font-size:17px}.wrap{width:min(100% - 30px,790px)}.source{display:none}main{padding-top:52px}.terms{grid-template-columns:1fr}.chapter{grid-template-columns:28px 1fr;gap:10px}.time{grid-template-columns:90px 1fr;gap:10px}section{padding:52px 0} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="https://www.instagram.com/rishabhsahill/" target="_blank" rel="noopener">@rishabhsahil<small>आसान हिन्दी में विचार</small></a>
+      <div class="nav-right">
+        <a class="source" href="https://darioamodei.com/essay/machines-of-loving-grace" target="_blank" rel="noopener">मूल निबंध ↗</a>
+        <button class="theme" type="button" aria-label="रंग बदलें" title="रंग बदलें"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main id="top" class="wrap">
+    <p class="eyebrow">एक स्वतंत्र, शैक्षिक समझाइश</p>
+    <h1>AI की ताकत को <em>आसान भाषा</em> में समझें।</h1>
+    <p class="lead">यह पेज “Machines of Loving Grace” में रखे विचारों का सरल हिन्दी सार है—ताकि कोई भी व्यक्ति यह समझ सके कि बहुत सक्षम AI से दुनिया कैसे बदल सकती है।</p>
+    <p class="credit">मूल निबंध: <strong>Dario Amodei</strong> &nbsp;·&nbsp; AI-assisted हिन्दी व्याख्या और प्रस्तुति: <a href="https://www.instagram.com/rishabhsahill/" target="_blank" rel="noopener">@rishabhsahil</a></p>
+    <a class="jump" href="#shuru">शुरू से समझें</a>
+
+    <section id="shuru">
+      <p class="section-label">पहले एक जरूरी बात</p>
+      <h2>यह लेख क्या है—और क्या नहीं है?</h2>
+      <p>यह किसी भविष्य की पक्की घोषणा नहीं है। यह एक सम्भावना पर विचार है: अगर आने वाले वर्षों में AI इंसानों के बराबर या कई कामों में उनसे बेहतर शोध कर सके, तो उसके अच्छे और बुरे परिणाम क्या हो सकते हैं?</p>
+      <p class="note">इसे ऐसे समझें: यह “कल क्या होगा” की खबर नहीं, बल्कि “अगर यह क्षमता आ गई तो हमें क्या सोचना चाहिए” वाला नक्शा है।</p>
+      <ul class="contents">
+        <li><a href="#powerful"><span>01</span> बहुत सक्षम AI क्या हो सकता है?</a></li>
+        <li><a href="#five"><span>02</span> पाँच बड़े क्षेत्र</a></li>
+        <li><a href="#time"><span>03</span> बदलाव की सम्भावित रफ्तार</a></li>
+        <li><a href="#care"><span>04</span> फायदे के साथ सावधानी क्यों?</a></li>
+      </ul>
+    </section>
+
+    <section id="powerful">
+      <p class="section-label">बुनियादी विचार</p>
+      <h2>“Powerful AI” का मतलब क्या है?</h2>
+      <p>आज का चैटबॉट अक्सर जवाब देता है, लिखने में मदद करता है या जानकारी समझाता है। इस विचार में भविष्य का AI सिर्फ बात नहीं करेगा; वह किसी लक्ष्य पर कई कदमों वाला काम भी कर पाएगा—जैसे जानकारी जुटाना, विकल्प बनाना, गणना करना और इंसानों के साथ मिलकर जाँच करना।</p>
+      <div class="example"><b>एक छोटा उदाहरण</b>मान लीजिए किसी बीमारी की दवा पर काम हो रहा है। AI बहुत सारे शोध-पत्र छाँटने, सम्भावित अणु सुझाने और परीक्षण की योजना बनाने में वैज्ञानिकों की मदद कर सकता है। लेकिन असली दवा बनाना और उसकी सुरक्षा जाँचना फिर भी लैब, डॉक्टरों और समय की माँग करेगा।</div>
+      <div class="terms">
+        <div class="term"><b>सोचने में मदद</b><span>तेज़ विश्लेषण और सुझाव</span></div>
+        <div class="term"><b>कई प्रतियाँ</b><span>एक ही समय में कई काम</span></div>
+        <div class="term"><b>सीमाएँ</b><span>प्रकृति और असली दुनिया के नियम</span></div>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">लेख की रूपरेखा</p>
+      <h2>लेखक किन बातों को मानकर आगे बढ़ते हैं?</h2>
+      <p>मूल लेख एक अच्छे-से-अच्छे सम्भव परिदृश्य की कल्पना करता है। उसमें AI को जादू नहीं, बल्कि बहुत तेज़ और बहुत बड़ी संख्या में उपलब्ध शोध-सहायक के रूप में देखा गया है। नीचे उसी रूपरेखा को आसान शब्दों में समझें:</p>
+      <ol class="chapters">
+        <li class="chapter"><span class="number">A</span><div><h3>कई विशेषज्ञ, एक साथ</h3><p>कल्पना यह है कि डेटा सेंटर में बहुत सारे AI सिस्टम एक साथ शोधकर्ता, इंजीनियर या विश्लेषक जैसे काम कर सकें। “बहुत सारे होशियार दिमाग” वाली उपमा इसी बात को सरलता से बताती है।</p></div></li>
+        <li class="chapter"><span class="number">B</span><div><h3>गति तेज़, पर प्रकृति नहीं बदलती</h3><p>AI किसी बीमारी के लिए अच्छे विचार जल्दी खोज सकता है, पर मरीजों पर जाँच, दवा बनाना और नियमों की मंजूरी में समय लगता है। इसलिए तेज़ खोज और तुरंत परिणाम—दो अलग बातें हैं।</p></div></li>
+        <li class="chapter"><span class="number">C</span><div><h3>भविष्य अनुमान है, वादा नहीं</h3><p>लेखक खुद भी इसे निश्चित भविष्यवाणी नहीं कहते। तारीखें, नतीजे और सामाजिक प्रभाव बदल सकते हैं; पेज का उद्देश्य सम्भावनाओं पर सोचना है।</p></div></li>
+      </ol>
+    </section>
+
+    <section id="five">
+      <p class="section-label">पाँच मुख्य विषय</p>
+      <h2>AI कहाँ सबसे ज्यादा असर डाल सकता है?</h2>
+      <ol class="chapters">
+        <li class="chapter"><span class="number">01</span><div><h3>स्वास्थ्य और जीवविज्ञान</h3><p>लेख का सबसे आशावादी हिस्सा स्वास्थ्य है। विचार यह है कि AI शोध की गति बढ़ा सकता है—नई दवाओं के संकेत, बीमारी के कारणों की पहचान, रोकथाम और इलाज के बेहतर तरीके। लेखक मानते हैं कि इससे कई दशकों के जैविक शोध का कुछ हिस्सा बहुत कम समय में आगे बढ़ सकता है। यह पक्का वादा नहीं है कि हर बीमारी खत्म हो जाएगी।</p><p>इसके दायरे में कैंसर, संक्रमण, आनुवंशिक रोग, दिल की बीमारी और उम्र बढ़ने से जुड़ी समस्याओं पर बेहतर समझ जैसी सम्भावनाएँ आती हैं। असली सफलता के लिए लैब, क्लिनिकल ट्रायल, डॉक्टर और समान पहुँच सभी जरूरी रहेंगे।</p><div class="example"><b>उदाहरण</b>एक डॉक्टर के पास किसी मरीज की रिपोर्ट है। AI उसे समान मामलों और सम्भावित सवालों की सूची देने में मदद कर सकता है। अंतिम फैसला डॉक्टर और मरीज का ही रहेगा।</div></div></li>
+        <li class="chapter"><span class="number">02</span><div><h3>दिमाग, सीखना और मन</h3><p>लेखक के अनुसार मस्तिष्क को समझना चिकित्सा की कठिन पहेलियों में से एक है। तेज़ शोध से अवसाद, चिंता, PTSD, लत और न्यूरोलॉजिकल बीमारियों को समझने व उनके लिए बेहतर सहायता के नए रास्ते मिल सकते हैं।</p><p>एक दूसरी सम्भावना व्यक्तिगत शिक्षा की है: हर विद्यार्थी को उसकी गति, भाषा और कमज़ोरियों के मुताबिक अभ्यास कराने वाला सहायक मिल सके। पर संवेदनशील मानसिक-स्वास्थ्य मामलों में योग्य इंसानी विशेषज्ञ की भूमिका जरूरी ही रहती है।</p><div class="example"><b>उदाहरण</b>एक AI पढ़ाई का साथी बता सकता है कि गणित में कहाँ गलती हो रही है और कल के लिए छोटा अभ्यास बना सकता है। वह शिक्षक, परिवार या मानसिक-स्वास्थ्य विशेषज्ञ की जगह नहीं लेता।</div></div></li>
+        <li class="chapter"><span class="number">03</span><div><h3>गरीबी और विकास</h3><p>लेख का एक अहम सवाल है: लाभ केवल अमीर देशों तक क्यों पहुँचे? अगर AI से स्वास्थ्य, खेती, शिक्षा और स्थानीय उद्योग बेहतर होते हैं, तो कम आय वाले देशों को तेजी से आगे बढ़ने का अवसर मिल सकता है। लेकिन तकनीक, बिजली, इंटरनेट, स्थानीय भाषा, प्रशिक्षण और भरोसेमंद संस्थाएँ भी चाहिए।</p><p>इसलिए “AI आ जाएगा तो गरीबी खत्म” कहना बहुत सरल बात होगी। सही दिशा में साझेदारी और सार्वजनिक व्यवस्था होने पर ही इसका फायदा व्यापक बन सकता है।</p><div class="example"><b>उदाहरण</b>किसान को उसकी भाषा में मौसम, मिट्टी और फसल की जानकारी मिले; पर सलाह स्थानीय विशेषज्ञ और असली परिस्थितियों से मिलाकर ही अपनाई जाए।</div></div></li>
+        <li class="chapter"><span class="number">04</span><div><h3>शांति और शासन</h3><p>यह हिस्सा सबसे कठिन संतुलन दिखाता है। AI गलत सूचना, निगरानी, साइबर अपराध या खतरनाक वैज्ञानिक कामों में इस्तेमाल हो सकता है। दूसरी ओर, यह झूठे दावों की जाँच, सार्वजनिक सेवाओं, रक्षा और आपदा-तैयारी में मददगार हो सकता है।</p><p>लेखक की चिंता है कि लोकतांत्रिक समाजों को सुरक्षा और स्वतंत्रता—दोनों बचानी होंगी। यानी केवल ताकतवर AI बनाना काफी नहीं; उसे जवाबदेह, नियंत्रित और नियमों के भीतर रखना भी जरूरी है।</p></div></li>
+        <li class="chapter"><span class="number">05</span><div><h3>काम और जीवन का अर्थ</h3><p>लेख केवल नौकरी छिनने का सवाल नहीं उठाता। यदि मशीनें बहुत-सा आर्थिक काम कर सकें, तो समाज को यह तय करना होगा कि बढ़ी हुई समृद्धि किस तरह बाँटी जाए और हर व्यक्ति को सम्मान, सुरक्षा और अवसर कैसे मिले।</p><p>काम लोगों को पहचान, दोस्ती, उद्देश्य और योगदान का एहसास भी देता है। इसलिए बेहतर भविष्य का अर्थ सिर्फ अधिक सामान या अधिक पैसा नहीं—बल्कि लोगों के लिए सीखने, बनाने, देखभाल करने और अर्थपूर्ण जीवन जीने के नए अवसर भी हैं।</p></div></li>
+      </ol>
+    </section>
+
+    <section id="time">
+      <p class="section-label">समय को समझें</p>
+      <h2>बदलाव एक दिन में नहीं होगा।</h2>
+      <p>AI सॉफ्टवेयर का काम तेज़ कर सकता है, लेकिन दवा का परीक्षण, कारखाना बनाना, कानून बदलना और लोगों का भरोसा बनना समय लेते हैं। इसलिए तेज़ बुद्धि का अर्थ यह नहीं कि हर चीज़ तुरंत हो जाएगी।</p>
+      <div class="timeline">
+        <div class="time"><div class="when">आज</div><div>AI लेखन, कोड, अनुवाद और विश्लेषण जैसे कामों में सहायक है।</div></div>
+        <div class="time"><div class="when">आने वाले वर्ष</div><div>अधिक सक्षम सिस्टम शोध और जटिल योजना में टीमों की मदद कर सकते हैं।</div></div>
+        <div class="time"><div class="when">असली दुनिया</div><div>नतीजे प्रयोग, लागत, नियम, इंसानी निर्णय और सब तक पहुँच पर निर्भर करेंगे।</div></div>
+      </div>
+    </section>
+
+    <section id="care">
+      <p class="section-label">सबसे जरूरी संतुलन</p>
+      <h2>उम्मीद के साथ जिम्मेदारी भी।</h2>
+      <p>बहुत सक्षम तकनीक से स्वास्थ्य, शिक्षा और जीवन-स्तर बेहतर हो सकता है। पर उससे नुकसान भी हो सकता है, खासकर अगर वह गलत हाथों में हो, बिना जाँच के फैसले करे, या उसका लाभ बराबर न बँटे। इसलिए सुरक्षा, पारदर्शिता, कानून और मानवीय जवाबदेही जरूरी हैं।</p>
+      <p class="note">सरल बात: AI अच्छा या बुरा अपने-आप नहीं होता। हम उसे किन नियमों, लोगों और उद्देश्यों के साथ बनाते हैं—यही फर्क पैदा करता है।</p>
+    </section>
+
+    <section>
+      <p class="section-label">आम सवाल</p>
+      <h2>जल्दी से समझें</h2>
+      <div class="faq">
+        <details><summary>क्या यह सब निश्चित रूप से होगा?</summary><p>नहीं। यह एक सम्भावित भविष्य का चित्र है। तकनीकी प्रगति, वैज्ञानिक नतीजे, नीतियाँ और समाज की पसंद—सब परिणाम बदल सकते हैं।</p></details>
+        <details><summary>क्या AI डॉक्टर या शिक्षक को हटा देगा?</summary><p>कुछ कामों का तरीका जरूर बदल सकता है। भरोसा, जिम्मेदारी, देखभाल और संदर्भ समझना अभी भी इंसानों की महत्वपूर्ण भूमिका है। बेहतर लक्ष्य है: AI को सहायक बनाना, बिना सोचे-समझे विकल्प नहीं।</p></details>
+        <details><summary>मुझे इससे क्या सीखना चाहिए?</summary><p>AI का उपयोग करना सीखें, पर उसके उत्तरों को जाँचें भी। अपनी विषय-समझ, संवाद, रचनात्मकता और निर्णय लेने की क्षमता मजबूत रखें।</p></details>
+      </div>
+    </section>
+
+    <section>
+      <div class="disclosure"><strong>स्रोत, श्रेय और उपयोग:</strong> मूल निबंध और विचारों के लेखक <strong>Dario Amodei</strong> हैं। यह पेज उनके <a href="https://darioamodei.com/essay/machines-of-loving-grace" target="_blank" rel="noopener">“Machines of Loving Grace”</a> का पूरा अनुवाद या पुनर्प्रकाशन नहीं है; यह शुरुआती पाठकों के लिए अपने शब्दों में बनाया गया स्वतंत्र शैक्षिक सार है। इसका explanation AI की सहायता से तैयार किया गया और <a href="https://www.instagram.com/rishabhsahill/" target="_blank" rel="noopener">@rishabhsahil</a> ने प्रस्तुत किया है। मूल लेख के लिए <a href="https://darioamodei.com/" target="_blank" rel="noopener">darioamodei.com</a> देखें।</div>
+    </section>
+  </main>
+  <footer class="wrap">© 2026 · AI-assisted explanation presented by <a href="https://www.instagram.com/rishabhsahill/" target="_blank" rel="noopener">@rishabhsahil</a> · <a href="#top">ऊपर जाएँ ↑</a></footer>
+  <script>
+    const root = document.documentElement, button = document.querySelector('.theme');
+    const saved = localStorage.getItem('hindi-ai-theme');
+    if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) root.classList.add('dark');
+    button.addEventListener('click', () => { root.classList.toggle('dark'); localStorage.setItem('hindi-ai-theme', root.classList.contains('dark') ? 'dark' : 'light'); });
+  </script>
+</body>
+</html>
